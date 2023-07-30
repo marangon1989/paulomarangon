@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Paulo Marangon",
+    "slug": "paulomarangon",
+    "scheme": "paulomarangon",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "runtimeVersion": "1.0.0",
+    "android": {
+      "package": "com.paulomarangon.personal"
+    },
+    "ios": {
+      "infoPlist": {
+      "bundleIdentifier": "com.paulomarangon.personal"
+    }
+  }
+}
+}
