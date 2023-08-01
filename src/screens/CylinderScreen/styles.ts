@@ -9,8 +9,9 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   font-size: 18px;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.gray};
   margin-bottom: 8px;
+  color: #0B0B0D;
 `;
 
 export const StyledScrollView = styled(ScrollView)`
@@ -27,10 +28,11 @@ export const ResultsContainer = styled.View`
 
 export const ResultTitle = styled.Text`
   font-size: 16px;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.black};
+  font-family: ${({theme}) => theme.font_family.roboto_700};
 `;
 
 export const ResultText = styled.Text`
   font-size: 14px;
-  color: ${(props) => props.theme.colors.secondaryText};
+  color: ${(props) => props.theme.colors.gray_700};
 `;

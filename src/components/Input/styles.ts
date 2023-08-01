@@ -18,29 +18,29 @@ export const CustomInputContainer = styled.View<CustomInputContainerProps>`
   width: 100%;
   flex-direction: row;
   align-items: center;
-  background-color: ${({ theme }) => theme.COLORS.GRAY};
+  background-color: ${({ theme }) => theme.colors.gray};
   padding: 0 ${scale(16)}px;
   border-width: 1px;
   border-color: ${({ isFocused, isError, theme }) =>
-    isError ? theme.COLORS.RED_DARK : isFocused ? theme.COLORS.BLUE : '#E5E7EB'};
+    isError ? theme.colors.red_dark : isFocused ? theme.colors.blue : '#E5E7EB'};
   margin-bottom: ${scale(8)}px;
-  box-shadow: 0 4px 6px ${({ theme }) => theme.COLORS.RGBA_ONE};
+  box-shadow: 0 4px 6px ${({ theme }) => theme.colors.rgba_one};
 `;
 
 export const CustomInputIcon = styled(Feather)<CustomInputIconProps>`
   margin-right: ${scale(16)}px;
   color: ${({ isFocused, isError, theme }) =>
-    isError ? theme.COLORS.RED_DARK : isFocused ? theme.COLORS.BLUE : theme.COLORS.GRAY_100};
+    isError ? theme.colors.red_dark : isFocused ? theme.colors.blue : theme.colors.gray_100};
     font-size: ${RFValue(18)}px;
 `;
 
 export const CustomInputContent = styled(TextInput)`
   flex: 1;
-  color: ${({ theme }) => theme.COLORS.GRAY_700};
+  color: ${({ theme }) => theme.colors.gray_700};
   font-size: ${RFValue(14)}px;
   min-height: ${verticalScale(46)}px;
   max-height: ${verticalScale(46)}px;
-  font-family: ${({ theme }) =>  theme.FONT_FAMILY.TEXT};
+  font-family: ${({ theme }) =>  theme.font_family.roboto_400};
 `;
 
 export const ErrorContainer = styled.View`
@@ -53,10 +53,10 @@ export const ErrorContainer = styled.View`
 `;
 
 export const ErrorMessage = styled.Text`
-  color: ${({ theme }) => theme.COLORS.RED_DARK};
+  color: ${({ theme }) => theme.colors.red_dark};
 `;
 
 export const ErrorIcon = styled(Feather)`
-  color: ${({ theme }) => theme.COLORS.RED_DARK};
+  color: ${({ theme }) => theme.colors.red_dark};
   margin-right: ${scale(8)}px;
 `;
